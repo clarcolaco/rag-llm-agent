@@ -1,0 +1,289 @@
+[
+    {
+        "label": "SentenceTransformer",
+        "importPath": "sentence_transformers",
+        "description": "sentence_transformers",
+        "isExtraImport": true,
+        "detail": "sentence_transformers",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "QueryRequest",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "QueryResponse",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "FraseInput",
+        "importPath": "src.models",
+        "description": "src.models",
+        "isExtraImport": true,
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "run_rag_pipeline",
+        "importPath": "src.rag_pipeline",
+        "description": "src.rag_pipeline",
+        "isExtraImport": true,
+        "detail": "src.rag_pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "embed_text",
+        "importPath": "src.embedding",
+        "description": "src.embedding",
+        "isExtraImport": true,
+        "detail": "src.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "embed_text",
+        "importPath": "src.embedding",
+        "description": "src.embedding",
+        "isExtraImport": true,
+        "detail": "src.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "embed_text",
+        "importPath": "src.embedding",
+        "description": "src.embedding",
+        "isExtraImport": true,
+        "detail": "src.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "insert_doc",
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "isExtraImport": true,
+        "detail": "src.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "insert_doc",
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "isExtraImport": true,
+        "detail": "src.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "search_similar",
+        "importPath": "vector_store",
+        "description": "vector_store",
+        "isExtraImport": true,
+        "detail": "vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "run_llm",
+        "importPath": "src.llm_wrapper",
+        "description": "src.llm_wrapper",
+        "isExtraImport": true,
+        "detail": "src.llm_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "QdrantClient",
+        "importPath": "qdrant_client",
+        "description": "qdrant_client",
+        "isExtraImport": true,
+        "detail": "qdrant_client",
+        "documentation": {}
+    },
+    {
+        "label": "Distance",
+        "importPath": "qdrant_client.models",
+        "description": "qdrant_client.models",
+        "isExtraImport": true,
+        "detail": "qdrant_client.models",
+        "documentation": {}
+    },
+    {
+        "label": "VectorParams",
+        "importPath": "qdrant_client.models",
+        "description": "qdrant_client.models",
+        "isExtraImport": true,
+        "detail": "qdrant_client.models",
+        "documentation": {}
+    },
+    {
+        "label": "PointStruct",
+        "importPath": "qdrant_client.models",
+        "description": "qdrant_client.models",
+        "isExtraImport": true,
+        "detail": "qdrant_client.models",
+        "documentation": {}
+    },
+    {
+        "label": "embed_text",
+        "kind": 2,
+        "importPath": "src.embedding",
+        "description": "src.embedding",
+        "peekOfCode": "def embed_text(text: str):\n    return _model.encode(text).tolist()",
+        "detail": "src.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "_model",
+        "kind": 5,
+        "importPath": "src.embedding",
+        "description": "src.embedding",
+        "peekOfCode": "_model = SentenceTransformer(\"all-MiniLM-L6-v2\")\ndef embed_text(text: str):\n    return _model.encode(text).tolist()",
+        "detail": "src.embedding",
+        "documentation": {}
+    },
+    {
+        "label": "run_llm",
+        "kind": 2,
+        "importPath": "src.llm_wrapper",
+        "description": "src.llm_wrapper",
+        "peekOfCode": "def run_llm(prompt: str, model: str = \"gemma:2b\"):\n    response = requests.post(\n        \"http://localhost:11434/api/generate\",\n        json={\"model\": model, \"prompt\": prompt}\n    )\n    return response.json()[\"response\"]",
+        "detail": "src.llm_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "query_rag",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def query_rag(request: QueryRequest):\n    resposta = run_rag_pipeline(request.query)\n    return QueryResponse(answer=resposta)\n@app.post(\"/frase\")\ndef adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "adicionar_frase",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "app = FastAPI(title=\"RAG Agent Organizacional\")\n@app.post(\"/query\", response_model=QueryResponse)\ndef query_rag(request: QueryRequest):\n    resposta = run_rag_pipeline(request.query)\n    return QueryResponse(answer=resposta)\n@app.post(\"/frase\")\ndef adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "QueryRequest",
+        "kind": 6,
+        "importPath": "src.models",
+        "description": "src.models",
+        "peekOfCode": "class QueryRequest(BaseModel):\n    query: str\nclass QueryResponse(BaseModel):\n    answer: str\nclass FraseInput(BaseModel):\n    texto: str",
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "QueryResponse",
+        "kind": 6,
+        "importPath": "src.models",
+        "description": "src.models",
+        "peekOfCode": "class QueryResponse(BaseModel):\n    answer: str\nclass FraseInput(BaseModel):\n    texto: str",
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "FraseInput",
+        "kind": 6,
+        "importPath": "src.models",
+        "description": "src.models",
+        "peekOfCode": "class FraseInput(BaseModel):\n    texto: str",
+        "detail": "src.models",
+        "documentation": {}
+    },
+    {
+        "label": "run_rag_pipeline",
+        "kind": 2,
+        "importPath": "src.rag_pipeline",
+        "description": "src.rag_pipeline",
+        "peekOfCode": "def run_rag_pipeline(query: str, top_k: int = 5):\n    contextos = search_similar(query, embed_text, top_k=top_k)\n    contexto = \"\\n\".join(contextos)\n    prompt = f\"Use as frases abaixo para responder:\\n\\n{contexto}\\n\\nPergunta: {query}\"\n    return run_llm(prompt)",
+        "detail": "src.rag_pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "insert_doc",
+        "kind": 2,
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "peekOfCode": "def insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,\n        points=[PointStruct(id=id, vector=embedding, payload={\"text\": text})]\n    )\ndef search_similar(query: str, embed_func, top_k=5):\n    vector = embed_func(query)\n    hits = qdrant.search(collection_name=COLLECTION, query_vector=vector, limit=top_k)\n    return [hit.payload[\"text\"] for hit in hits]",
+        "detail": "src.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "search_similar",
+        "kind": 2,
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "peekOfCode": "def search_similar(query: str, embed_func, top_k=5):\n    vector = embed_func(query)\n    hits = qdrant.search(collection_name=COLLECTION, query_vector=vector, limit=top_k)\n    return [hit.payload[\"text\"] for hit in hits]",
+        "detail": "src.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "qdrant",
+        "kind": 5,
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "peekOfCode": "qdrant = QdrantClient(\"localhost\", port=6333)\nCOLLECTION = \"frases\"\n# Inicializa a coleção\nqdrant.recreate_collection(\n    collection_name=COLLECTION,\n    vectors_config=VectorParams(size=384, distance=Distance.COSINE)\n)\ndef insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,",
+        "detail": "src.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "COLLECTION",
+        "kind": 5,
+        "importPath": "src.vector_store",
+        "description": "src.vector_store",
+        "peekOfCode": "COLLECTION = \"frases\"\n# Inicializa a coleção\nqdrant.recreate_collection(\n    collection_name=COLLECTION,\n    vectors_config=VectorParams(size=384, distance=Distance.COSINE)\n)\ndef insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,\n        points=[PointStruct(id=id, vector=embedding, payload={\"text\": text})]",
+        "detail": "src.vector_store",
+        "documentation": {}
+    }
+]
