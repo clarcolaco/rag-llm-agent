@@ -6,19 +6,19 @@ uvicorn app:app --reload
 
 # Example
 ### Using gemini to upload a pdf file
-![alt text](image.png)
+![alt text](/google/gemini/utils/image.png)
 
 ### Using the id to ask about the document
-![alt text](image-1.png)
+![alt text](/google/gemini/utils/image-1.png)
 
 ### The answer in portuguese
-![alt text](image-2.png)
+![alt text](/google/gemini/utils/image-2.png)
 
 ### And answer in english
-![alt text](image-3.png)
+![alt text](/google/gemini/utils/image-3.png)
 
 ### Asking the resume
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](/google/gemini/utils/image-4.png)
+![alt text](/google/gemini/utils/image-5.png)
 
 @clarcolaco - 2025
