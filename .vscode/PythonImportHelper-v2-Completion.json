@@ -1,27 +1,29 @@
 [
     {
-        "label": "SentenceTransformer",
-        "importPath": "sentence_transformers",
-        "description": "sentence_transformers",
-        "isExtraImport": true,
-        "detail": "sentence_transformers",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
+        "label": "os",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
-        "label": "uuid4",
-        "importPath": "uuid",
-        "description": "uuid",
+        "label": "google.generativeai",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "uuid",
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
+        "documentation": {}
+    },
+    {
+        "label": "fitz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fitz",
+        "description": "fitz",
+        "detail": "fitz",
         "documentation": {}
     },
     {
@@ -33,75 +35,27 @@
         "documentation": {}
     },
     {
-        "label": "QueryRequest",
-        "importPath": "src.models",
-        "description": "src.models",
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "src.models",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "QueryResponse",
-        "importPath": "src.models",
-        "description": "src.models",
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "src.models",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "FraseInput",
-        "importPath": "src.models",
-        "description": "src.models",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "src.models",
-        "documentation": {}
-    },
-    {
-        "label": "run_rag_pipeline",
-        "importPath": "src.rag_pipeline",
-        "description": "src.rag_pipeline",
-        "isExtraImport": true,
-        "detail": "src.rag_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "embed_text",
-        "importPath": "src.embedding",
-        "description": "src.embedding",
-        "isExtraImport": true,
-        "detail": "src.embedding",
-        "documentation": {}
-    },
-    {
-        "label": "embed_text",
-        "importPath": "src.embedding",
-        "description": "src.embedding",
-        "isExtraImport": true,
-        "detail": "src.embedding",
-        "documentation": {}
-    },
-    {
-        "label": "embed_text",
-        "importPath": "src.embedding",
-        "description": "src.embedding",
-        "isExtraImport": true,
-        "detail": "src.embedding",
-        "documentation": {}
-    },
-    {
-        "label": "insert_doc",
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "isExtraImport": true,
-        "detail": "src.vector_store",
-        "documentation": {}
-    },
-    {
-        "label": "insert_doc",
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "isExtraImport": true,
-        "detail": "src.vector_store",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -113,177 +67,121 @@
         "documentation": {}
     },
     {
-        "label": "search_similar",
-        "importPath": "vector_store",
-        "description": "vector_store",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
         "isExtraImport": true,
-        "detail": "vector_store",
+        "detail": "dotenv",
         "documentation": {}
     },
     {
-        "label": "run_llm",
-        "importPath": "src.llm_wrapper",
-        "description": "src.llm_wrapper",
+        "label": "GoogleGenerativeAIEmbeddings",
+        "importPath": "langchain_google_genai",
+        "description": "langchain_google_genai",
         "isExtraImport": true,
-        "detail": "src.llm_wrapper",
+        "detail": "langchain_google_genai",
         "documentation": {}
     },
     {
-        "label": "QdrantClient",
-        "importPath": "qdrant_client",
-        "description": "qdrant_client",
+        "label": "ChatGoogleGenerativeAI",
+        "importPath": "langchain_google_genai",
+        "description": "langchain_google_genai",
         "isExtraImport": true,
-        "detail": "qdrant_client",
+        "detail": "langchain_google_genai",
         "documentation": {}
     },
     {
-        "label": "Distance",
-        "importPath": "qdrant_client.models",
-        "description": "qdrant_client.models",
+        "label": "FAISS",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
         "isExtraImport": true,
-        "detail": "qdrant_client.models",
+        "detail": "langchain_community.vectorstores",
         "documentation": {}
     },
     {
-        "label": "VectorParams",
-        "importPath": "qdrant_client.models",
-        "description": "qdrant_client.models",
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain.text_splitter",
+        "description": "langchain.text_splitter",
         "isExtraImport": true,
-        "detail": "qdrant_client.models",
+        "detail": "langchain.text_splitter",
         "documentation": {}
     },
     {
-        "label": "PointStruct",
-        "importPath": "qdrant_client.models",
-        "description": "qdrant_client.models",
+        "label": "load_qa_chain",
+        "importPath": "langchain.chains.question_answering",
+        "description": "langchain.chains.question_answering",
         "isExtraImport": true,
-        "detail": "qdrant_client.models",
+        "detail": "langchain.chains.question_answering",
         "documentation": {}
     },
     {
-        "label": "embed_text",
+        "label": "PromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "MY_KEY",
+        "importPath": "env",
+        "description": "env",
+        "isExtraImport": true,
+        "detail": "env",
+        "documentation": {}
+    },
+    {
+        "label": "Question",
+        "kind": 6,
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "class Question(BaseModel):\n    doc_id: str\n    question: str\n# --- Funções Auxiliares ---\ndef get_pdf_text(file: UploadFile) -> str:\n    \"\"\"Extrai texto de um arquivo PDF usando PyMuPDF.\"\"\"\n    try:\n        doc = fitz.open(stream=file.file.read(), filetype=\"pdf\")\n        text = \"\"\n        for page in doc:",
+        "detail": "google.gemini.src.app",
+        "documentation": {}
+    },
+    {
+        "label": "get_pdf_text",
         "kind": 2,
-        "importPath": "src.embedding",
-        "description": "src.embedding",
-        "peekOfCode": "def embed_text(text: str):\n    return _model.encode(text).tolist()",
-        "detail": "src.embedding",
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "def get_pdf_text(file: UploadFile) -> str:\n    \"\"\"Extrai texto de um arquivo PDF usando PyMuPDF.\"\"\"\n    try:\n        doc = fitz.open(stream=file.file.read(), filetype=\"pdf\")\n        text = \"\"\n        for page in doc:\n            text += page.get_text()\n        return text\n    except Exception as e:\n        raise HTTPException(status_code=500, detail=f\"Erro ao processar o PDF: {e}\")",
+        "detail": "google.gemini.src.app",
         "documentation": {}
     },
     {
-        "label": "_model",
-        "kind": 5,
-        "importPath": "src.embedding",
-        "description": "src.embedding",
-        "peekOfCode": "_model = SentenceTransformer(\"all-MiniLM-L6-v2\")\ndef embed_text(text: str):\n    return _model.encode(text).tolist()",
-        "detail": "src.embedding",
-        "documentation": {}
-    },
-    {
-        "label": "run_llm",
+        "label": "get_text_chunks",
         "kind": 2,
-        "importPath": "src.llm_wrapper",
-        "description": "src.llm_wrapper",
-        "peekOfCode": "def run_llm(prompt: str, model: str = \"gemma:2b\"):\n    response = requests.post(\n        \"http://localhost:11434/api/generate\",\n        json={\"model\": model, \"prompt\": prompt}\n    )\n    return response.json()[\"response\"]",
-        "detail": "src.llm_wrapper",
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "def get_text_chunks(text: str) -> list:\n    \"\"\"Divide o texto em chunks menores para embeddings.\"\"\"\n    text_splitter = RecursiveCharacterTextSplitter(\n        chunk_size=1000,\n        chunk_overlap=200,\n        length_function=len\n    )\n    chunks = text_splitter.split_text(text)\n    return chunks\ndef get_vector_store(text_chunks: list):",
+        "detail": "google.gemini.src.app",
         "documentation": {}
     },
     {
-        "label": "query_rag",
+        "label": "get_vector_store",
         "kind": 2,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "def query_rag(request: QueryRequest):\n    resposta = run_rag_pipeline(request.query)\n    return QueryResponse(answer=resposta)\n@app.post(\"/frase\")\ndef adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
-        "detail": "src.main",
-        "documentation": {}
-    },
-    {
-        "label": "adicionar_frase",
-        "kind": 2,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "def adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
-        "detail": "src.main",
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "def get_vector_store(text_chunks: list):\n    \"\"\"Cria embeddings e um vetor FAISS a partir dos chunks de texto.\"\"\"\n    embeddings = GoogleGenerativeAIEmbeddings(model=\"models/embedding-001\")\n    vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)\n    return vector_store\n# --- Endpoints da API ---\n@app.post(\"/upload-pdf/\")\nasync def upload_pdf(file: UploadFile = File(...)):\n    \"\"\"\n    Endpoint para fazer o upload de um PDF e processá-lo para ser usado na conversa.",
+        "detail": "google.gemini.src.app",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "src.main",
-        "description": "src.main",
-        "peekOfCode": "app = FastAPI(title=\"RAG Agent Organizacional\")\n@app.post(\"/query\", response_model=QueryResponse)\ndef query_rag(request: QueryRequest):\n    resposta = run_rag_pipeline(request.query)\n    return QueryResponse(answer=resposta)\n@app.post(\"/frase\")\ndef adicionar_frase(frase: FraseInput):\n    insert_doc(id=int(uuid4().int >> 64), text=frase.texto, embedding=embed_text(frase.texto))\n    return {\"msg\": \"Frase adicionada com sucesso\"}",
-        "detail": "src.main",
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "app = FastAPI(title=\"PDF Chat com RAG e FastAPI\")\n# Dicionário para armazenar o vector_store FAISS em memória por sessão\nvector_store_sessions = {}\n# --- Modelos Pydantic ---\nclass Question(BaseModel):\n    doc_id: str\n    question: str\n# --- Funções Auxiliares ---\ndef get_pdf_text(file: UploadFile) -> str:\n    \"\"\"Extrai texto de um arquivo PDF usando PyMuPDF.\"\"\"",
+        "detail": "google.gemini.src.app",
         "documentation": {}
     },
     {
-        "label": "QueryRequest",
-        "kind": 6,
-        "importPath": "src.models",
-        "description": "src.models",
-        "peekOfCode": "class QueryRequest(BaseModel):\n    query: str\nclass QueryResponse(BaseModel):\n    answer: str\nclass FraseInput(BaseModel):\n    texto: str",
-        "detail": "src.models",
-        "documentation": {}
-    },
-    {
-        "label": "QueryResponse",
-        "kind": 6,
-        "importPath": "src.models",
-        "description": "src.models",
-        "peekOfCode": "class QueryResponse(BaseModel):\n    answer: str\nclass FraseInput(BaseModel):\n    texto: str",
-        "detail": "src.models",
-        "documentation": {}
-    },
-    {
-        "label": "FraseInput",
-        "kind": 6,
-        "importPath": "src.models",
-        "description": "src.models",
-        "peekOfCode": "class FraseInput(BaseModel):\n    texto: str",
-        "detail": "src.models",
-        "documentation": {}
-    },
-    {
-        "label": "run_rag_pipeline",
-        "kind": 2,
-        "importPath": "src.rag_pipeline",
-        "description": "src.rag_pipeline",
-        "peekOfCode": "def run_rag_pipeline(query: str, top_k: int = 5):\n    contextos = search_similar(query, embed_text, top_k=top_k)\n    contexto = \"\\n\".join(contextos)\n    prompt = f\"Use as frases abaixo para responder:\\n\\n{contexto}\\n\\nPergunta: {query}\"\n    return run_llm(prompt)",
-        "detail": "src.rag_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "insert_doc",
-        "kind": 2,
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "peekOfCode": "def insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,\n        points=[PointStruct(id=id, vector=embedding, payload={\"text\": text})]\n    )\ndef search_similar(query: str, embed_func, top_k=5):\n    vector = embed_func(query)\n    hits = qdrant.search(collection_name=COLLECTION, query_vector=vector, limit=top_k)\n    return [hit.payload[\"text\"] for hit in hits]",
-        "detail": "src.vector_store",
-        "documentation": {}
-    },
-    {
-        "label": "search_similar",
-        "kind": 2,
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "peekOfCode": "def search_similar(query: str, embed_func, top_k=5):\n    vector = embed_func(query)\n    hits = qdrant.search(collection_name=COLLECTION, query_vector=vector, limit=top_k)\n    return [hit.payload[\"text\"] for hit in hits]",
-        "detail": "src.vector_store",
-        "documentation": {}
-    },
-    {
-        "label": "qdrant",
+        "label": "vector_store_sessions",
         "kind": 5,
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "peekOfCode": "qdrant = QdrantClient(\"localhost\", port=6333)\nCOLLECTION = \"frases\"\n# Inicializa a coleção\nqdrant.recreate_collection(\n    collection_name=COLLECTION,\n    vectors_config=VectorParams(size=384, distance=Distance.COSINE)\n)\ndef insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,",
-        "detail": "src.vector_store",
-        "documentation": {}
-    },
-    {
-        "label": "COLLECTION",
-        "kind": 5,
-        "importPath": "src.vector_store",
-        "description": "src.vector_store",
-        "peekOfCode": "COLLECTION = \"frases\"\n# Inicializa a coleção\nqdrant.recreate_collection(\n    collection_name=COLLECTION,\n    vectors_config=VectorParams(size=384, distance=Distance.COSINE)\n)\ndef insert_doc(id: int, text: str, embedding: list):\n    qdrant.upsert(\n        collection_name=COLLECTION,\n        points=[PointStruct(id=id, vector=embedding, payload={\"text\": text})]",
-        "detail": "src.vector_store",
+        "importPath": "google.gemini.src.app",
+        "description": "google.gemini.src.app",
+        "peekOfCode": "vector_store_sessions = {}\n# --- Modelos Pydantic ---\nclass Question(BaseModel):\n    doc_id: str\n    question: str\n# --- Funções Auxiliares ---\ndef get_pdf_text(file: UploadFile) -> str:\n    \"\"\"Extrai texto de um arquivo PDF usando PyMuPDF.\"\"\"\n    try:\n        doc = fitz.open(stream=file.file.read(), filetype=\"pdf\")",
+        "detail": "google.gemini.src.app",
         "documentation": {}
     }
 ]

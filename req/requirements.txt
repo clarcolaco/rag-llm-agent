@@ -1,5 +1,8 @@
-fastapi
-uvicorn
-sentence-transformers
-qdrant-client
-gpt4allp
+fastapi[all]
+python-multipart
+pydantic-settings
+pymupdf
+google-generativeai
+langchain-google-genai
+langchain-community
+faiss-cpu
